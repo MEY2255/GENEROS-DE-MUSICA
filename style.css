@@ -1,0 +1,125 @@
+
+section{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  background-image: linear-gradient(135deg, #100574, #320272, #2c4bb3, #1862d1, #7b168f, #29133d, #355f05);
+  background-size: 500%;
+  animation: fanimado 10s infinite;
+  opacity: 0.8;
+  color: aliceblue;
+}
+
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.logo{
+    width: 400px;
+    height: 400px;
+}
+
+h1{
+    text-decoration: solid;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120px;
+    text-align: center;
+}
+
+p {
+    font-family: unset;
+    font-size: 35px;
+    background-color: black;
+    opacity: 0.6;
+    color: aliceblue;
+    margin-left: 30%;
+}
+
+body{
+    background-image: url(img/fondoM.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+h3{
+    font-family: fantasy;
+    font-size: 60px;
+    color: teal;
+   -webkit-text-stroke-width: 2px; /* Ancho del contorno */
+   -webkit-text-stroke-color: black; /* Color del contorno */
+}
+
+img{
+    border: solid 5px black;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+
+b{
+   font-size: 24px; 
+   color:rgb(238, 231, 231)
+}
+
+footer{
+    margin-top: auto;
+    background-image: linear-gradient(135deg, #100574, #320272, #2c4bb3, #1862d1, #7b168f, #29133d, #355f05);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+    opacity: 0.8;
+    color: beige;
+    font-size:xx-large; 
+    width: 100%;
+    position: absolute;
+}
+
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    border: none;
+    width: 300px;
+    height: 300px;
+    border-radius: 150%;
+    background-image: url(img/youtube_logo.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+  background-color: rgb(19, 19, 20);
+filter: invert(1);
+}
+
+.menu-item{
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.menu-item:hover{
+  opacity: 1;
+}
+
+.copyright{
+  color: rgb(238, 231, 231);
+  opacity: 0.3;
+  text-align: center;
+}
